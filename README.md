@@ -1,5 +1,4 @@
 # Celebrity Face Similarity Search with CLIP and MongoDB
-
 This project is a small end-to-end system that takes an input face image and finds the most visually similar celebrity face from a dataset.
 It uses CLIP embeddings to represent images as vectors and MongoDB to store and search those embeddings.
 
@@ -9,7 +8,6 @@ In this new project I reuse the same embedding and similarity ideas, but apply t
 
 
 ## Dataset
-
 The dataset is from Kaggle:
 
 **Celebrity Face Image Dataset**
@@ -24,7 +22,7 @@ To run the notebook, download it from Kaggle and place it in a local folder (for
 
 Each subfolder corresponds to one celebrity and contains that person’s images. This folder structure is important because I use the folder name as the celebrity label.
 
-## High-level idea
+
 
 The main idea is:
 
@@ -40,7 +38,6 @@ No training is required. CLIP is a pre-trained model that already knows a lot ab
 
 
 ## Why I used these tools
-
 ### CLIP (image encoder)
 
 * CLIP is a general-purpose vision–language model that produces meaningful image embeddings.
@@ -71,13 +68,6 @@ Model used:
 * It is scale-invariant, which is useful when the magnitude of embeddings is less important than their direction.
 * It is easy to implement with NumPy and works well for ranking similarity in this context.
 
-
-## Project structure in the notebook
-
-The notebook is divided into two main parts:
-
-1. **Preparing the celebrity database**
-2. **Querying the database with an input image**
 
 ### Imports and setup
 
