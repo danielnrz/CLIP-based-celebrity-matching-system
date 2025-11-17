@@ -324,7 +324,6 @@ This celebrity project is a natural extension of that idea:
 * The same CLIP + MongoDB + cosine similarity pattern is reused.
 * The logic is more general and can be adapted to other image similarity tasks.
 
----
 
 ## Possible extensions
 
